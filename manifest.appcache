@@ -1,0 +1,17 @@
+CACHE MANIFEST
+# version 201604201709
+
+CACHE:
+index.html
+style/baseline.css
+style/klopklop.css
+style/spinner.css
+script/appcache.js
+script/klopklop.js
+script/lib.js
+
+NETWORK:
+*
+
+FALLBACK:
+/ /index.html

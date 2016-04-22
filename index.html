@@ -1,0 +1,165 @@
+<!doctype html>
+
+<html manifest="manifest.appcache">
+
+<meta charset="utf-8">
+
+<!--basic info-->
+<meta name="description" content="App om langs de deuren te gaan.">
+<meta name="author" content="Bob van Vliet">
+
+<!--do not track-->
+<meta name="robots" content="noindex, nofollow">
+
+<!--mobile first-->
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+
+<!--iOS webapp-->
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<!--<link rel="apple-touch-icon-precomposed" sizes="57x57" href="image/logo_57.png">
+<link rel="apple-touch-icon-precomposed" sizes="72x72" href="image/logo_72.png">
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="image/logo_114.png">
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="image/logo_144.png">-->
+
+<!--favicon-->
+<!--<link rel="icon" href="favicon.ico" type="image/x-icon">-->
+
+<!--styling-->
+<link rel="stylesheet" type="text/css" href="style/baseline.css">
+<link rel="stylesheet" type="text/css" href="style/spinner.css">
+<link rel="stylesheet" type="text/css" href="style/klopklop.css">
+
+<title>Klop Klop</title>
+
+<body>
+
+<div id="spinner" class="spinner screen">
+    <h1 id="spinnerTitle">Klop Klop</h1>
+    <div id="spinnerMessage">
+        <p>De interface wordt geladen.</p>
+    </div>
+    <div class="sk-circle">
+        <div class="sk-circle1 sk-child"></div>
+        <div class="sk-circle2 sk-child"></div>
+        <div class="sk-circle3 sk-child"></div>
+        <div class="sk-circle4 sk-child"></div>
+        <div class="sk-circle5 sk-child"></div>
+        <div class="sk-circle6 sk-child"></div>
+        <div class="sk-circle7 sk-child"></div>
+        <div class="sk-circle8 sk-child"></div>
+        <div class="sk-circle9 sk-child"></div>
+        <div class="sk-circle10 sk-child"></div>
+        <div class="sk-circle11 sk-child"></div>
+        <div class="sk-circle12 sk-child"></div>
+    </div>
+    <!-- source: http://tobiasahlin.com/spinkit/ -->
+</div>
+
+<div id="alert" class="alert screen">
+    <h1 id="alertTitle">Melding</h1>
+    <div id="alertMessage">
+        <p>De melding in een korte zin.</p>
+    </div>
+    <div class="alertConfirmButtonWrapper">
+        <input id="alertButtonOk" type="button" value="Ok">
+    </div>
+</div>
+
+<div id="confirm" class="confirm screen">
+    <h1 id="confirmTitle">Melding</h1>
+    <div id="confirmMessage">
+        <p>De melding in een korte zin.</p>
+    </div>
+    <div class="alertConfirmButtonWrapper">
+        <input id="confirmButtonNo" type="button" class="halfButton" value="Nee">
+        <input id="confirmButtonYes" type="button" class="halfButton" value="Ja">
+        <div class="clearFix"></div>
+    </div>
+</div>
+
+<div id="home" class="screen">
+    <h1 class="logoType">Klop Klop</h1>
+    <h2>Opties:</h2>
+    <input id="homeButtonAddressSelect" class="green" type="button" value="Aan de slag!">
+    <input id="homeButtonResults" type="button" value="Resultaten">
+    <h2>Dev:</h2>
+    <input id="homeButtonClearLocalStorage" type="button" value="Lokale data wissen">
+</div>
+
+<div id="results" class="screen">
+    <input id="resultsButtonBack" type="button" class="backButton" value="Terug">
+    <h2>Resultaten versturen:</h2>
+    <label for="recipientEmail">E-mail:</label>
+    <input type="email" autocomplete="off" value="" id="recipientEmail" name="recipientEmail">
+    <input id="resultsButtonSend" class="green" type="button" value="Verstuur">
+    <h2>Resultaten:</h2>
+    <ul id="resultsList" class="resultsList">
+        <li>
+            <div class="resultOutcome">Outcome</div>
+            <div class="resultAddress">Straatnaam 123 iii</div>
+            <div class="resultMunicipality">Municipality</div>
+            <div class="resultName">First and Lastname</div>
+            <div class="resultPhone">06 - 12 34 56 78</div>
+            <div class="resultEmail">address@domain.com</div>
+            <div class="resultNotes">Notes...</div>
+            <div class="resultTimeStamp">01-01-1970, 00:00</div>
+        </li>
+    </ul>
+</div>
+
+<div id="addressSelect" class="screen">
+    <h2>Waar ga je aanbellen?</h2>
+    <label for="municipality">Gemeente:</label>
+    <input type="text" autocomplete="off" value="" id="municipality" name="municipality">
+    <label for="streetName">Straatnaam:</label>
+    <input type="text" autocomplete="off" value="" id="streetName" name="streetName">
+    <label for="houseNumber">Huisnummer:</label>
+    <input class="narrow" type="number" autocomplete="off" value="" id="houseNumber" name="houseNumber">
+    <label for="houseNumberAddon">Toevoeging:</label>
+    <input class="narrow" type="text" autocomplete="off" value="" id="houseNumberAddon" name="houseNumberAddon">
+    <input id="addressSelectButtonQuit" type="button" class="halfButton" value="Stoppen">
+    <input id="addressSelectButtonOk" type="button" class="green halfButton" value="Ok">
+</div>
+
+<div id="doorKnockResult" class="screen">
+    <h2>Aanbellen bij:</h2>
+    <p id="currentAddress">Straatnaam 123 iii</p>
+    <h2>Resultaat:</h2>
+    <input id="doorKnockResultButtonInterested" class="green" type="button" value="Wil gegevens invullen">
+    <input id="doorKnockResultButtonNotInterested" class="green" type="button" value="Geen interesse">
+    <input id="doorKnockResultButtonNotHome" class="green" type="button" value="Niet thuis">
+    <input id="doorKnockResultButtonCancel" type="button" value="Annuleren">
+</div>
+
+<div id="respondentForm" class="screen">
+    <h2>Ja, ik doe mee!</h2>
+    <label for="firstName">Voornaam:</label>
+    <input type="text" autocomplete="off" value="" id="firstName" name="firstName">
+    <label for="lastName">Achternaam:</label>
+    <input type="text" autocomplete="off" value="" id="lastName" name="lastName">
+    <label for="phone">Telefoon:</label>
+    <input type="tel" autocomplete="off" value="" id="phone" name="phone">
+    <label for="email">E-mail:</label>
+    <input type="email" autocomplete="off" value="" id="email" name="email">
+    <input id="respondentFormButtonCancel" type="button" class="halfButton" value="Terug">
+    <input id="respondentFormButtonOk" type="button" class="green halfButton" value="Ok">
+</div>
+
+<div id="canvasserForm" class="screen">
+    <h2>Ingevulde gegevens:</h2>
+    <div id="responseData" class="responseData">
+        <div class="responseAddress"></div>
+        <div class="responseName"></div>
+        <div class="responseEmail"></div>
+        <div class="responsePhone"></div>
+    </div>
+    <label for="notes">Opmerkingen:</label>
+    <textarea id="notes" name="notes"></textarea>
+    <input id="canvasserFormButtonCancel" type="button" class="halfButton" value="Terug">
+    <input id="canvasserFormButtonOk" type="button" class="green halfButton" value="Ok">
+</div>
+
+<script type="text/javascript" src="script/appcache.js"></script>
+<script type="text/javascript" src="script/lib.js"></script>
+<script type="text/javascript" src="script/klopklop.js"></script>

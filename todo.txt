@@ -1,0 +1,33 @@
+core
+====
+
+- reageren op "enter"
+    - jump to next input
+    - submit
+
+- timeStamps ombouwen naar leesbare datums/tijden
+
+- privacy melding onder respondentForm scherm
+
+- spek en bonen modus (results() functie ipv results variable die checkt op modus)
+
+
+nice to have
+============
+
+- in-screen messages (in stead of fullscreen popups/confirms)
+- explainer messages for invalid entries
+- prettifyThing() functies
+    - firstName
+    - lastName
+    - phone
+- auto-increment houseNumber/houseNumberAddon?
+- dropdown met gemeenten (previous entries)
+- dropdown met straten (previous entries)
+
+
+after MVP
+=========
+
+- dropdwon met gemeenten (turf)
+- dropdown met straten (turf)

@@ -1,0 +1,107 @@
+body {
+    padding: 0;
+    margin: 0;
+    background-color: #fff;
+    overflow-y: scroll;
+    font-size: 18px; /* fallback */
+    font-size: calc(11.6px + 2vw); /* = 18px at 320px viewport width */
+}
+
+.screen {
+    display: none; /* screen display is switched in javascript */
+    position: absolute;
+    box-sizing: border-box;
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-height: 100%;
+    padding-top: 0.5em;
+    background-color: #fff;
+}
+
+h1 {
+    margin: 0 3% 0.375em;
+    font-size: 2em;
+}
+
+h2 {
+    margin: 0 3% 0.6em;
+    font-size: 1.2em;
+}
+
+p {
+    margin: 0 3% 1em;
+}
+
+input[type=button] {
+    display: block;
+    box-sizing: border-box;
+    width: 94%;
+    padding: 0.75em 0.5em;
+    margin: 0 3% 1em;
+    background-color: #666;
+    color: #fff;
+}
+
+.halfButton {
+    float: left;
+    width: 45.5% !important;
+    margin: 0 0 1em 3% !important;
+}
+
+.alertConfirmButtonWrapper {
+    position: absolute;
+    width: 100%;
+    bottom: 1em;
+}
+
+label {
+    display: block;
+    margin: 0 3% 0.25em;
+    font-size: 0.9em;
+}
+
+input[type=text],
+input[type=number],
+input[type=tel],
+input[type=email],
+textarea {
+    display: block;
+    box-sizing: border-box;
+    width: 94%;
+    padding: 0.5em;
+    margin: 0 3% 1em;
+    background-color: #eee;
+    border: 2px solid #ccc;
+}
+
+textarea {
+    height: 5em;
+    padding: 0.555em;
+    margin: 0 3% 1.111em;
+    font-size: 0.9em;
+}
+
+.invalid {
+    border: 2px solid #ec1b23 !important;
+    /*padding: 0.5em 0.5em 0.35em !important;
+    border-bottom: 0.15em solid #ec1b23;*/
+}
+
+.responseData {
+    padding: 0.75em 0;
+    margin: 0 0 0.5em;
+}
+
+.responseAddress,
+.responseName,
+.responseEmail,
+.responsePhone {
+    margin: 0 3% 0.25em;
+    font-size: 0.9em;
+}
+
+.green {
+    background-color: #0a6 !important;
+    color: #fff !important;
+}
